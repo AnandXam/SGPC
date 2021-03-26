@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "63462449517",
+    "project_id": "sgpc-5dd1e",
+    "storage_bucket": "sgpc-5dd1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63462449517:android:0876c0206e5628b0d8fa64",
+        "android_client_info": {
+          "package_name": "com.sakhthi.products.sgpc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63462449517-h2v07p4n5u844o5bkgbic5c9sqlct5es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmxvromIvAQC8lTFB8D_BrdDWQ4pTBlec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63462449517-h2v07p4n5u844o5bkgbic5c9sqlct5es.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomRender\" />
+    <Folder Include="Utils\" />
+    <Folder Include="helper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Utils\Fonts\fa-regular.otf" />
+    <None Remove="Utils\Fonts\fa-regular-brands.otf" />
+    <None Remove="Utils\Fonts\fa-solid.otf" />
+    <None Remove="Utils\Fonts\Sansation-Bold.ttf" />
+    <None Remove="Utils\Fonts\Sansation-Light.ttf" />
+    <None Remove="Utils\Fonts\Sansation-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Utils\Fonts\fa-regular.otf" />
+    <EmbeddedResource Include="Utils\Fonts\fa-regular-brands.otf" />
+    <EmbeddedResource Include="Utils\Fonts\fa-solid.otf" />
+    <EmbeddedResource Include="Utils\Fonts\Sansation-Bold.ttf" />
+    <EmbeddedResource Include="Utils\Fonts\Sansation-Light.ttf" />
+    <EmbeddedResource Include="Utils\Fonts\Sansation-Regular.ttf" />
+  </ItemGroup>
+</Project>

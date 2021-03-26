@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Gear.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Controls="clr-namespace:Gear.CustomRender"
+    xmlns:fontawesome="clr-namespace:FontAwesome"
+    BackgroundColor="#FBFCFF"
+    NavigationPage.HasNavigationBar="False">
+
+
+    <Grid
+        x:Name="MainLayout"
+        HorizontalOptions="FillAndExpand"
+        RowDefinitions="4*,7*"
+        VerticalOptions="FillAndExpand">
+        <StackLayout
+            Grid.Row="0"
+            Margin="0,20,0,0"
+            HorizontalOptions="FillAndExpand"
+            Orientation="Vertical"
+            VerticalOptions="FillAndExpand">
+            <Image
+                HeightRequest="230"
+                HorizontalOptions="CenterAndExpand"
+                Source="back_logo.png"
+                VerticalOptions="CenterAndExpand" />
+            <Label
+                Margin="10,40,10,10"
+                FontFamily="SA-R"
+                FontSize="40"
+                HorizontalOptions="Center"
+                Text="SGPC"
+                TextColor="Black" />
+        </StackLayout>
+        <Grid Grid.Row="1" VerticalOptions="FillAndExpand">
+
+            <Grid RowDefinitions="Auto,Auto,Auto" VerticalOptions="CenterAndExpand">
+
+                <Frame
+                    Grid.Row="0"
+                    Margin="30,0,30,10"
+                    Padding="5"
+                    CornerRadius="10"
+                    HeightRequest="50">
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label
+                            Margin="10,5,0,5"
+                            FontFamily="FA-B"
+                            FontSize="20"
+                            HorizontalOptions="Start"
+                            Text="{x:Static fontawesome:FontAwesomeIcons.User}"
+                            TextColor="Gray"
+                            VerticalOptions="Center" />
+                        <Controls:BorderlessEntry
+                            x:Name="Userid"
+                            FontFamily="SA-R"
+                            FontSize="Small"
+                            HorizontalOptions="FillAndExpand"
+                            Placeholder="Enter Userid"
+                            PlaceholderColor="Gray"
+                            TextColor="Black" />
+                    </StackLayout>
+
+                </Frame>
+                <Frame
+                    Grid.Row="1"
+                    Margin="30,0,30,10"
+                    Padding="5"
+                    CornerRadius="10"
+                    HeightRequest="50">
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label
+                            Margin="10,5,0,5"
+                            FontFamily="FA-B"
+                            FontSize="20"
+                            HorizontalOptions="Start"
+                            Text="{x:Static fontawesome:FontAwesomeIcons.Lock}"
+                            TextColor="Gray"
+                            VerticalOptions="Center" />
+                        <Controls:BorderlessEntry
+                            x:Name="Password"
+                            FontFamily="SA-R"
+                            FontSize="Small"
+                            HorizontalOptions="FillAndExpand"
+                            Placeholder="Enter Password"
+                            PlaceholderColor="Gray"
+                            TextColor="Black" />
+                    </StackLayout>
+                </Frame>
+
+                <Button
+                    Grid.Row="2"
+                    Margin="60,0,60,10"
+                    Clicked="Login"
+                    CornerRadius="10"
+                    FontFamily="SA-R"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Login"
+                    TextColor="White">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Offset="0.1" Color="#6691F7" />
+                            <GradientStop Offset="1.0" Color="#339BF7" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
